@@ -98,13 +98,7 @@ const MoviesList = (props) => {
     };
 
     return (
-        <div className="App" style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            textAlign: "center",
-            padding: "20px"
-        }}>
+        <div className="App">
             <Container>
                 <Form>
                     <Row>
@@ -159,13 +153,7 @@ const MoviesList = (props) => {
                         </Col>
                     </Row>
                 </Form>
-                <Row style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    padding: "20px",
-                    boxSizing: "border-box"
-                }}>
+                <Row>
                     {movies.map((movie) => {
                         return(
                             <Col style={{marginBottom: "10px"}}>

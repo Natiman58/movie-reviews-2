@@ -8,6 +8,7 @@ import Movie from './components/movie.js';
 import Login from './components/login.js';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import "./App.css"
 
 function App() {
   const [user, setUser] = React.useState(null);

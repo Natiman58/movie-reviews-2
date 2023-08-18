@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .App-logo {
@@ -34,5 +38,29 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+  .container {
+    width: fit-content;
+  }
+  .row {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  .card {
+    position: relative;
+    left: 7%;
+    right: 10%;
   }
 }
