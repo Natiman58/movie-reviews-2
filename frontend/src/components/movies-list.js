@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import MovieDataService from "../services/movies.js";
 import { Link } from "react-router-dom";
-import {Form, Button, Col, Row, Container, Card} from "react-bootstrap";
+import {Form, Button, Col, Row, Container, Card, Media, ButtonToolbar} from "react-bootstrap";
 
 
 const MoviesList = (props) => {
@@ -98,7 +98,13 @@ const MoviesList = (props) => {
     };
 
     return (
-        <div className="App">
+        <div className="App" style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            textAlign: "center",
+            padding: "20px"
+        }}>
             <Container>
                 <Form>
                     <Row>
@@ -153,10 +159,16 @@ const MoviesList = (props) => {
                         </Col>
                     </Row>
                 </Form>
-                <Row>
+                <Row style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    padding: "20px",
+                    boxSizing: "border-box"
+                }}>
                     {movies.map((movie) => {
                         return(
-                            <Col>
+                            <Col style={{marginBottom: "10px"}}>
                                 <Card style={{ width: "18rem"}}>
                                     <Card.Img src={movie.poster+"/100px180"} />
                                     <Card.Body>
