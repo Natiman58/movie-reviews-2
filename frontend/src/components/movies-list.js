@@ -157,7 +157,7 @@ const MoviesList = (props) => {
                     {movies.map((movie) => {
                         return(
                             <Col style={{marginBottom: "10px"}}>
-                                <Card style={{ width: "18rem"}}>
+                                <Card>
                                     <Card.Img src={movie.poster+"/100px180"} />
                                     <Card.Body>
                                         <Card.Title>{movie.title}</Card.Title>

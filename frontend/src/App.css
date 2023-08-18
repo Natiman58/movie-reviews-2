@@ -41,6 +41,9 @@
   }
 }
 
+.card {
+  width: 18rem;
+}
 @media screen and (max-width: 1200px){
   .App {
     display: flex;
@@ -54,9 +57,10 @@
     width: fit-content;
   }
   .row {
-    width: 100%;
-    height: auto;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .card {
     position: relative;
