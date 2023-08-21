@@ -119,7 +119,11 @@ const MoviesList = (props) => {
                                     variant="primary"
                                     type="button"
                                     onClick={findByTitle}
-                                    style={{margin: '5px 15px'}}
+                                    style={{
+                                            margin: '5px 15px',
+                                            position: 'relative',
+                                            left: "-40%"
+                                        }}
                             >
                                 Search
                             </Button>
@@ -145,7 +149,10 @@ const MoviesList = (props) => {
                                 type="button"
                                 onClick={findByRating}
                                 style={{
-                                        margin: '5px 15px'
+                                        margin: '5px 15px',
+                                        position: 'relative',
+                                        left: "-40%",
+                                        backGroundColor: 'red'
                                         }}
                             >
                                 Search
