@@ -65,7 +65,12 @@ const Movie = (props) => {
                             </Card.Body>
                         </Card>
                         <br />
-                        <h2>Reviews</h2>
+                        <h2 style={{
+                                    "font-size": "2rem",
+                                    "position": "relative",
+                                    "left": "22%",
+                                    "width": "8rem",
+                                }} >Reviews</h2>
                         {movie.reviews.map((review, index) => {
                             console.log(review, index)
                             return (

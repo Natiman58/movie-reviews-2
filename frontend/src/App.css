@@ -43,6 +43,9 @@
 
 .card {
   width: 18rem;
+  position: relative;
+  left: 22%;
+  text-align: left;
 }
 @media screen and (max-width: 1200px){
   .App {
