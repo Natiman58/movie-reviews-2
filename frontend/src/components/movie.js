@@ -82,7 +82,10 @@ const Movie = (props) => {
                                                 "Do MMMM YYYY"
                                             )}
                                         </h5>
-                                        <p>{review.review}</p>
+                                        <p style={{"position": "relative",
+                                                    "margin-left": "20%",
+                                                    "textAlign": "left"
+                                                    }}>{review.review}</p>
                                         {props.user && props.user.id === review.user_id && (
                                             <Row>
                                                 <Col>
